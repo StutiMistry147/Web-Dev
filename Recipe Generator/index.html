@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FridgeFeast | Culinary Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glow-bg"></div> <div class="app-container">
+        <nav class="navbar">
+            <div class="logo">Fridge<span>Feast</span></div>
+            <div class="nav-links">Recipe Finder</div>
+        </nav>
+
+        <header class="hero">
+            <h1>Turn your leftovers into <span class="text-gradient">gourmet meals.</span></h1>
+            <p>Recipe discovery powered by your available ingredients.</p>
+            
+            <div class="search-container">
+                <input type="text" id="ingredientInput" placeholder="Enter ingredients (e.g., salmon, lemon, kale)">
+                <button id="searchBtn">Discover Recipes</button>
+            </div>
+        </header>
+
+        <section id="recipeGrid" class="recipe-grid">
+            </section>
+    </div>
+
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
